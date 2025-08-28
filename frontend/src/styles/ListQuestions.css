@@ -1,0 +1,60 @@
+@layer components {
+  .preguntas-container {
+    @apply p-4 sm:p-6 md:p-10;
+  }
+
+  .preguntas-title {
+    @apply text-xl font-bold mb-4;
+  }
+
+  .preguntas-table {
+    @apply min-w-full border-2 border-gray-300;
+  }
+
+   .preguntas-thead {
+    @apply bg-black text-white text-sm sm:text-2xl;
+  }
+
+  .preguntas-th {
+    @apply px-2 sm:px-4 py-2 border text-xs sm:text-sm md:text-lg;
+  }
+
+  .preguntas-td {
+    @apply px-2 sm:px-4 py-2 border text-xs sm:text-sm md:text-lg;
+  }
+
+  .preguntas-check {
+    @apply px-2 sm:px-4 py-2 border w-8 sm:w-10 text-center;
+  }
+
+  .preguntas-loading {
+    @apply mt-4 text-blue-500 text-sm sm:text-base;
+  }
+
+  .preguntas-error {
+    @apply mt-4 text-red-500 text-sm sm:text-base;
+  }
+}
+
+.slide-fade-enter-active {
+  transition: all 2s ease-out;
+}
+.slide-fade-leave-active {
+  transition: all 2s ease-in;
+}
+.slide-fade-enter-from {
+  opacity: 0;
+  transform: translateY(40px);
+}
+.slide-fade-enter-to {
+  opacity: 1;
+  transform: translateY(0);
+}
+.slide-fade-leave-from {
+  opacity: 1;
+  transform: translateY(0);
+}
+.slide-fade-leave-to {
+  opacity: 0;
+  transform: translateY(-20px);
+}

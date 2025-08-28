@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+@import "./Logo.css";
+@import "./FormQuestions.css";
+@import "./SquareCheckbox.css";
+@import "./RoundCheckbox.css";
+@import "./Semaphore.css";
+@import "./ListQuestions.css";
+@import "./LoginRegister.css";
+@import "./About.css";
+@import "./ListEvaluations.css";

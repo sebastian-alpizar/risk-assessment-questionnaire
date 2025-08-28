@@ -1,0 +1,59 @@
+@layer components {
+  .evaluaciones-container {
+    @apply p-4;
+  }
+
+  /* Títulos */
+  .titulo-h2 {
+    @apply text-sm sm:text-xl lg:text-2xl font-bold mb-4;
+  }
+
+  .titulo-h3 {
+    @apply text-sm sm:text-lg lg:text-2xl font-semibold mb-2;
+  }
+
+  /* Texto fecha */
+  .texto-fecha {
+    @apply text-sm text-gray-400;
+  }
+
+  /* Card evaluación */
+  .card-evaluacion {
+    @apply mb-6 border rounded-lg p-4 shadow;
+  }
+
+  /* Porcentajes */
+  .porcentaje {
+    @apply px-2 py-0 sm:py-1 rounded text-xs sm:text-sm;
+  }
+
+  /* Tablas */
+  .tabla-respuestas {
+    @apply min-w-full border mt-4 text-base md:text-lg lg:text-xl;
+  }
+
+  .tabla-thead {
+    @apply bg-black;
+  }
+
+  .tabla-th {
+    @apply border px-2 py-1;
+  }
+
+  .tabla-td {
+    @apply border px-2 py-1 text-center;
+  }
+
+  /* Respuestas */
+  .respuesta-si {
+    @apply text-green-600 font-semibold;
+  }
+
+  .respuesta-no {
+    @apply text-red-600 font-semibold;
+  }
+
+  .respuesta-na {
+    @apply text-gray-500;
+  }
+}

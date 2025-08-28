@@ -1,0 +1,35 @@
+@layer components {
+  .checkbox-wrapper {
+    @apply flex items-center w-10;
+  }
+
+  .checkbox-text {
+    @apply text-teal-500 text-sm font-medium;
+  }
+
+  .checkbox-gradient {
+    @apply relative flex size-8 items-center justify-center overflow-hidden rounded-full 
+           bg-gradient-to-tr from-[#4158D0] via-[#C850C0] to-[#FFCC70] 
+           p-0.5 duration-400 hover:p-1.5 cursor-pointer;
+  }
+
+  .checkbox-input {
+    @apply hidden;
+  }
+
+  .checkbox-circle {
+    @apply size-full rounded-full bg-black;
+  }
+
+  .checkbox-line-long {
+    @apply absolute left-[0.6rem] h-[3px] w-[21px] -translate-y-10 translate-x-10 
+           -rotate-[41deg] rounded-sm bg-white duration-300 
+           peer-checked:translate-x-0 peer-checked:translate-y-0;
+  }
+
+  .checkbox-line-short {
+    @apply absolute left-[0.3rem] top-4.5 h-[3px] w-[10px] -translate-x-10 -translate-y-10 
+           rotate-[45deg] rounded-sm bg-white duration-300 
+           peer-checked:translate-x-0 peer-checked:translate-y-0;
+  }
+}

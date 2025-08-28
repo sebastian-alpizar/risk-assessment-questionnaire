@@ -1,0 +1,100 @@
+@layer components {
+    .main-container {
+        @apply flex flex-col items-center justify-center h-[500px];
+        @apply m-0;
+    }
+
+    .form-container {
+        @apply text-sm gap-3 p-3;
+        @apply sm:text-base sm:gap-6;
+    }
+
+    .container {
+        @apply flex flex-row justify-center items-center gap-0;
+        @apply sm:gap-5;
+    }
+    
+    .form-checkbox-norms {
+        @apply grid gap-5;
+
+        @apply sm:grid-rows-[50px_1fr] sm:gap-0;
+
+        @apply lg:grid-cols-[100px_1fr_1fr_1fr_1fr] items-center;
+    }
+    .checkbox-norms-subgrid {
+        @apply grid gap-3;
+
+        @apply sm:grid-cols-2;
+
+        @apply lg:grid-cols-1 lg:contents;
+    }
+
+    .form-checkbox-risks {
+        @apply grid gap-5;
+
+        @apply sm:grid-rows-[50px_1fr] sm:gap-0;
+
+        @apply lg:grid-cols-[100px_0.1fr_0.1fr_0.1fr] items-center;
+    }
+    .checkbox-risks-subgrid {
+        @apply grid gap-3;
+
+        @apply sm:grid-cols-2;
+
+        @apply lg:grid-cols-1 lg:contents;
+    }  
+
+    .semaphore-container{
+        @apply flex flex-col items-center gap-10 min-w-45;
+    }
+}
+
+.form-container {
+    background: linear-gradient(#000000, #000000) padding-box,
+                linear-gradient(145deg, transparent 35%,#e81cff, #40c9ff) border-box;
+    border: 3.5px solid transparent;
+    font-family: inherit;
+    font-weight: 700;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    border-radius: 16px;
+    background-size: 200% 100%;
+    animation: gradient 5s ease infinite;
+}
+
+.semaphore-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+    min-height: 100px;
+    position: relative; /* Necesario para position: absolute en los hijos */
+}
+
+.semaphore-item {
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 480px) {
+    .main-container {
+      margin-top: 10px;
+      margin-bottom: 25px;
+    }
+}
+@media (min-width: 650px) {
+    .main-container {
+      height: 425px;
+    }
+}
+/* Pantallas ≥ 1024px */
+@media (min-width: 1025px) {
+  .main-container {
+    height: 350px;
+  }
+}
+
+.slide-move {
+  transition: transform 0.5s;
+}
